@@ -1,5 +1,3 @@
-<h1>Søkeresultater</h1>
-
 <?php
 $min = 3;
 $term = htmlspecialchars($_GET['ord']);

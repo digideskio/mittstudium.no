@@ -1,5 +1,3 @@
-<h1>Evaluer studium</h1>
-
 <div class="register-form">
     <form>
         <div class="input-group">

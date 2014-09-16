@@ -1,5 +1,3 @@
-<h1>Registrer studium</h1>
-
 <div class="register-form">
     <form>
         <div class="input-group">
