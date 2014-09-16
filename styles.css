@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Ubuntu Light';
+    src: url('Ubuntu-L.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16pt;
+    line-height: 1.5;
+    font-family: 'Ubuntu Light', sans-serif;
+    color: #333;
+    background-color: #EAF3FF;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 1em 0;
+}
+
+input {
+    padding: 3px;
+}
+
+input, select, option, button {
+    font-size: inherit;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+}
+
+.wrapper {
+    max-width: 1000px;
+    background: #fff;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(124, 181, 255, 0.2);
+
+    /* gjør slik at bredden inkluderer border, padding, margin, etc */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+header {;
+    /* la elementer posisjoneres absolutt inne i header, relativt til header */
+    position: relative;
+}
+
+.logo {
+    font-size: 32px;
+    background-color: #003E8E;
+    display: inline-block;
+    padding: 0 5px;
+    margin-bottom: 20px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+
+    text-transform: uppercase;
+}
+
+.pages {
+    list-style: none;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+
+    padding: 30px 0;
+}
+
+.pages li {
+    /* posisjoner pages-elementer ved siden av hverandre */
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.pages li a {
+    padding: 0.5em;
+    color: black;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    text-shadow: 1px 1px 0 #ddd;
+}
+
+.pages li a:hover {
+    border-bottom: 3px solid #ccc;
+}
+
+.pages .active a {
+    border-bottom: 3px solid #003E8E;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.pages .active a:hover {
+    border-bottom: 3px solid #003E8E;
+}
+
+.search {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.content {
+    margin: 50px 0;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+}
+
+.credits {
+    text-align: center;
+    list-style: none;
+}
+
+.credits-title {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.input-group {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.input-group:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.input-group label {
+    /* posisjoner labels til venstre for dets respektive input-element */
+    display: inline-block;
+    min-width: 230px;
+    max-width: 230px;
+}
+
+.page-search .results {
+    list-style-position: inside;
+    margin: 0 20px;
+}

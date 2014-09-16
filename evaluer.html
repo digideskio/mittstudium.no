@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MittStudium.no – Registrer studium</title>
+    <meta charset="utf-8">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <link href="conditional-styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <header>
+
+            <div class="logo">
+                <a href="index.html">MittStudium.no</a>
+            </div>
+
+            <nav clas="navigation">
+
+                <ul class="pages">
+                    <li><a href="index.html">Hovedsiden</a></li>
+                    <li><a href="registrer.html">Registrer</a></li>
+                    <li class="active"><a href="evaluer.html">Evaluer</a></li>
+                    <li><a href="resultater.html">Resultater</a></li>
+                </ul>
+
+                <div class="search">
+                    <form action="soek.html">
+                        <input class="search-input" type="search" placeholder="Søk etter studium">
+                    </form>
+                </div>
+
+            </nav>
+
+        </header>
+
+        <div class="content">
+
+            <h1>Evaluer studium</h1>
+
+            <div class="register-form">
+                <form>
+                    <div class="input-group">
+                        <label for="name">Navn på studium</label>
+                        <select id="name">
+                            <option>Informasjonsvitenskap (Universitet i Bergen)</option>
+                            <option>Kognitiv vitenskap (Universitet i Bergen)</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="rating">Karakter</label>
+                        <select id="rating">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="accept">Jeg har gått på dette kurset</label>
+                        <input type="checkbox" id="accept">
+                    </div>
+                    <div class="input-group">
+                        <button>Evaluer</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <footer>
+
+            <p class="credits-title">Laget av</p>
+
+            <ul class="credits">
+                <li><a href="mailto:jonas.drange@student.uib.no">Jonas G. Drange</a></li>
+            </ul>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
