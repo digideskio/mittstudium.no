@@ -149,7 +149,21 @@ footer {
     max-width: 230px;
 }
 
-.page-search .results {
+.page-soek .results {
     list-style-position: inside;
     margin: 0 20px;
+}
+
+.recommendation {
+    width: 30px;
+}
+
+.great {
+    background-color: #589900;
+}
+.ok {
+    background-color: #0B62A3;
+}
+.bad {
+    background-color: #D92200;
 }
