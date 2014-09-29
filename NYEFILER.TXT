@@ -1,17 +1,1 @@
-new file:   404.php
-deleted:    evaluer.html
-new file:   evaluer.php
-new file:   footer.php
-new file:   head.php
-new file:   header.php
-new file:   hjem.php
-deleted:    index.html
-new file:   index.php
-new file:   mittstudium.php
-deleted:    registrer.html
-new file:   registrer.php
-deleted:    resultater.html
-new file:   resultater.php
-deleted:    soek.html
-new file:   soek.php
-modified:   styles.css
+new file:   lab5.js
