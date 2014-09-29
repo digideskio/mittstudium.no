@@ -41,25 +41,31 @@ $pages = array(
     'resultater' => (object) array(
         'id' => 1,
         'title' => 'Resultater',
-        'long_title' => 'Registrer',
+        'long_title' => 'Resultater',
         'template' => 'resultater.php',
         'url' => 'resultater',
         'in_menu' => true,
         'keywords' => array('resultater', 'oppsummering', 'skoler', 'studier', 'institusjoner', 'studium'),
         'resultater' => array(
             (object) array(
+                'id' => 0,
                 'institusjon' => 'Universitetet i Bergen',
                 'studium' => 'Informasjonsvitenskap',
+                'extra' => '<p>Vil du finne fram til gode dataløysingar for banksystem, helsesektoren, oljebransjen eller morgondagens skole? Vil du lære god interaksjonsdesign? Drøymer du om å utvikle den neste store appen?</p> <p>Gjennom studiet i informasjonsvitskap utviklar du evner til samarbeid, kritisk tenking og kreativitet ¿ noko som er sentralt i arbeidet med å lage dei beste løysningane for brukarane. Du lærer korleis behandling av kunnskap, informasjon og data kan bli, bør bli og faktisk blir støtta av informasjons- og kommunikasjonsteknologi (IKT). IKT kan for eksempel vere informasjonssystem, program, databasar, datamaskinar, datanettverk og internett. Desse kunnskapane blir nytta til aktiv problemløysing og produktutvikling. Som informasjonsvitar vil du kunne fungere som bindeledd mellom praktiske utviklarar av programvare og andre grupper i organisasjonen.</p>',
                 'karakter' => 6
             ),
             (object) array(
+                'id' => 1,
                 'institusjon' => 'Universitetet i Bergen',
                 'studium' => 'Kognitiv vitenskap',
+                'extra' => '<p>Korleis fungerer hjernen? Kva er kunstig intelligens? Korleis får ein ei datamaskin til å spele sjakk og attpåtil slå dei beste sjakkspelarane i verda?</p> <p>Kva eigenskapar må ein robot ha for å kunne bevege seg i ulendt terreng? Menneskeleg tenking blir til i eit samspel mellom sansing, minne, språk, problemløysing og kjensler. I kognitiv vitskap prøver vi å forstå korleis desse ulike evnene til den menneskelege hjernen fungerer kvar for seg og samla.</p> <p>Det gjer vi blant anna ved å lage dataprogram som skal simulere desse ¿evnene, for å sjå om dataprogramma er i stand til å framvise åtferd som liknar menneskeleg intelligens. Slik prøver vi å skaffe betre kunnskap om korleis ein intelligent hjerne fungerer, og vidare om korleis vi kan konstruere dataprogram som har kunstig ¿intelligens.</p> <p>I praksis kan slik kunnskap blant anna brukast til å lage dataspel, datasystem med talegjenkjenning eller dataprogram for medisinsk diagnose.</p>',
                 'karakter' => 3
             ),
             (object) array(
+                'id' => 2,
                 'institusjon' => 'Handelshøyskolen BI',
                 'studium' => 'Bachelor of Business Administration',
+                'extra' => '<p>Som du sikkert vet, blir arbeidslivet bare mer og mer internasjonalt. Store selskaper og organisasjoner ser på hele verden som sitt marked, og rekrutterer folk fra ulike land. I denne typen jobber sier det seg selv at både kultur og arbeidsspråk ofte er mest mulig felles og enhetlig på tvers av landegrensene.</p> <p>En internasjonal utdanning. Studiet gjennomføres i sin helhet på engelsk, og er åpent for både utenlandske og norske studenter. I fjor startet det studenter fra hele 63 forskjellige land. Sjansen for å knytte kontakter og vennskap utover Norges grenser er dermed stor. Spesialisering i Shipping eller International Business. I det tredje året kan du velge mellom spesialisering i enten Shipping Management eller Internasjonal Business.</p>',
                 'karakter' => 1
             )
         )
@@ -111,11 +117,13 @@ foreach ($pages as $page) {
     if ($page->url === $req_page) {
         $site->current_page = $page;
         break;
-    } else if ($req_page === '') {
+    } else if ($req_page === '' || !$req_page) {
         $site->current_page = $pages['home'];
         break;
     }
     $site->current_page = $pages['p404'];
 }
+
+$minimal_version = $_GET['min'] == 1;
 
 ?>

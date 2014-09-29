@@ -16,6 +16,10 @@ body {
     background-color: #EAF3FF;
 }
 
+body.minimal {
+    background-color: white;
+}
+
 h1 {
     font-size: 24px;
     text-align: center;
@@ -49,6 +53,13 @@ th, td {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+}
+
+.minimal .wrapper {
+    margin: 0;
+    max-width: none;
+    box-shadow: none;
+    padding: 40px 100px;
 }
 
 header {;
@@ -149,6 +160,10 @@ footer {
     max-width: 230px;
 }
 
+.secure-form input {
+    background-color: #FFFF70;
+}
+
 .page-soek .results {
     list-style-position: inside;
     margin: 0 20px;
@@ -158,12 +173,60 @@ footer {
     width: 30px;
 }
 
-.great {
+
+.result {
+    cursor: pointer;
+}
+
+.result .great {
     background-color: #589900;
 }
-.ok {
+
+.result .ok {
     background-color: #0B62A3;
 }
-.bad {
+
+.result .bad {
     background-color: #D92200;
+}
+
+.extra-information {
+    font-size: 80%;
+}
+
+.information-content {
+    padding: 50px;
+    transition: padding 0.1s, max-height 0.5s;
+}
+
+.information-content p {
+    margin: 0 0 10px 0;
+}
+
+.hidden .information-content {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.more-authors {
+    display: block;
+    margin: 10px auto;
+}
+
+.secure {
+    border: 1px solid #1C4A00;
+    background-color: #569532;
+    color: white;
+    text-shadow: 1px 1px #1C4A00;
+    padding: 10px;
+    text-align: center;
+}
+
+.note {
+    border: 1px solid #D9D900;
+    background-color: #FFFFA4;
+    margin: 10px 0;
+    color: #1C4A00;
+    padding: 10px;
 }

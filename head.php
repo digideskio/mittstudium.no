@@ -5,4 +5,5 @@
     <meta charset="utf-8">
     <link href="styles.css" type="text/css" rel="stylesheet">
     <link href="conditional-styles.css" type="text/css" rel="stylesheet">
+    <script src="lab5.js"></script>
 </head>
