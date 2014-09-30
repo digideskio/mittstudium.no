@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="studier.xsl"?>
+<mittstudium>
+    <course key="uib/INFO100">
+        <code>INFO100</code>
+        <title>Examen facultatum - Grunnkurs i informasjonsvitskap</title>
+        <url>http://www.uib.no/emne/INFO100</url>
+        <faculty>Institutt for informasjons- og medievitenskap</faculty>
+        <institution>Universitetet i Bergen</institution>
+        <credits>10</credits>
+        <terms>1</terms>
+        <term>Fall</term>
+        <language>Norsk</language>
+        <contact>studieveileder@info.uib.no</contact>
+        <grade>6</grade>
+    </course>
+    <course key="uib/INF207">
+        <code>INF207</code>
+        <title>Sosial nettverksteori</title>
+        <url>http://www.uib.no/emne/INF207</url>
+        <faculty>Institutt for informatikk</faculty>
+        <institution>Universitetet i Bergen</institution>
+        <credits>10</credits>
+        <terms>1</terms>
+        <term>Fall</term>
+        <language>Norsk</language>
+        <contact>studieveileder@ii.uib.no</contact>
+        <grade>6</grade>
+    </course>
+    <course key="uib/EXPHIL-SVEKS">
+        <code>EXPHIL-SVEKS</code>
+        <title>Examen philosophicum- skuleeksamen</title>
+        <url>http://www.uib.no/emne/EXPHIL-SVEKS</url>
+        <faculty>Institutt for filosofi og førstesemesterstudium</faculty>
+        <institution>Universitetet i Bergen</institution>
+        <credits>10</credits>
+        <terms>1</terms>
+        <term value="fall">Høst</term>
+        <term value="spring">Vår</term>
+        <language>Norsk</language>
+        <contact>exphil@uib.no</contact>
+        <grade>6</grade>
+    </course>
+    <course key="uib/INFO132">
+        <code>INFO132</code>
+        <title>Grunnkurs i programmering</title>
+        <url>http://www.uib.no/emne/INFO132</url>
+        <faculty>Institutt for informasjons- og medievitenskap</faculty>
+        <institution>Universitetet i Bergen</institution>
+        <credits>10</credits>
+        <terms>1</terms>
+        <term value="spring">Vår</term>
+        <language>Norsk</language>
+        <contact>studieveileder@info.uib.no</contact>
+        <grade>6</grade>
+    </course>
+    <course key="uib/INFO102">
+        <code>INFO102</code>
+        <title>Formelle metodar for informasjonsvitskap</title>
+        <url>http://www.uib.no/emne/INFO102</url>
+        <faculty>Institutt for informasjons- og medievitenskap</faculty>
+        <institution>Universitetet i Bergen</institution>
+        <credits>5</credits>
+        <terms>1</terms>
+        <term value="spring">Vår</term>
+        <language>Norsk</language>
+        <contact>studieveileder@info.uib.no</contact>
+        <grade>6</grade>
+    </course>
+    <course key="uib/INFO282">
+        <code>INFO282</code>
+        <title>Knowledge Representation and Reasoning </title>
+        <url>http://www.uib.no/emne/INFO282</url>
+        <faculty>Institutt for informasjons- og medievitenskap</faculty>
+        <institution>Universitetet i Bergen</institution>
+        <credits>10</credits>
+        <terms>1</terms>
+        <term value="fall">Høst</term>
+        <language>English</language>
+        <contact>advice@info.uib.no</contact>
+        <grade>6</grade>
+    </course>
+</mittstudium>
