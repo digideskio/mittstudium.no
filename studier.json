@@ -1,0 +1,46 @@
+{
+    "courses": [
+        {
+            "key":              "uib/INFO100",
+            "code":             "INFO100",
+            "title":            "Examen facultatum - Grunnkurs i informasjonsvitskap",
+            "url":              "http://www.uib.no/emne/INFO100",
+            "faculty":          "Institutt for informasjons- og medievitenskap",
+            "institution":      "Universitetet i Bergen",
+            "credits":          10,
+            "terms":            1,
+            "term":             "Fall",
+            "language":         "Norsk",
+            "contact":          "studieveileder@info.uib.no",
+            "grade":            6
+        },
+        {
+            "key": "uib/INFO102",
+            "code":             "INFO102",
+            "title":            "Formelle metodar for informasjonsvitskap",
+            "url":              "http://www.uib.no/emne/INFO102",
+            "faculty":          "Institutt for informasjons- og medievitenskap",
+            "institution":      "Universitetet i Bergen",
+            "credits":          5,
+            "terms":            1,
+            "term":             "Vår",
+            "language":         "Norsk",
+            "contact":          "studieveileder@info.uib.no",
+            "grade":            6
+        },
+        {
+            "key": "uib/INFO282",
+            "code":             "INFO282",
+            "title":            "Knowledge Representation and Reasoning ",
+            "url":              "http://www.uib.no/emne/INFO282",
+            "faculty":          "Institutt for informasjons- og medievitenskap",
+            "institution":      "Universitetet i Bergen",
+            "credits":          10,
+            "terms":            1,
+            "term":             "Høst",
+            "language":         "English",
+            "contact":          "advice@info.uib.no",
+            "grade":            6
+        }
+    ]
+}

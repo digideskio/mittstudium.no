@@ -1,2 +1,2 @@
-new file:   studier.xml
-new file:   studier.xsl
+new file:   kontaktinfo.json
+new file:   studier.json

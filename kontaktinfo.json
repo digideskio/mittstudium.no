@@ -1,0 +1,20 @@
+{
+    "contacts": [
+        {
+            "first_name":   "Jonas",
+            "last_name":    "Grønås Drange",
+            "telephone":    "+4741444424",
+            "email":        "jonas@drange.net"
+        },
+        {
+            "first_name":   "Richard",
+            "last_name":    "Feynman",
+            "telephone":    "555-0042",
+            "email":        "feynman@caltech.com"
+        },
+        {
+            "first_name":   "Immanuel",
+            "last_name":    "Kant"
+        }
+    ]
+}
