@@ -125,6 +125,12 @@ function renderContact (contact) {
 function coursesSetup () {
     var json;
     var courses;
+    var parent = document.getElementById('courses');
+
+    if (!parent) {
+        return;
+    }
+
     try {
         json = JSON.parse(loadFile('studier.json'));
     } catch (e) {
@@ -132,7 +138,6 @@ function coursesSetup () {
         return;
     }
     courses = json['courses'];
-    parent = document.getElementById('courses');
     courses.forEach(function (course) {
         parent.appendChild(renderCourse(course));
     });
