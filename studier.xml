@@ -1,83 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="studier.xsl"?>
 <mittstudium>
-    <course key="uib/INFO100">
-        <code>INFO100</code>
-        <title>Examen facultatum - Grunnkurs i informasjonsvitskap</title>
-        <url>http://www.uib.no/emne/INFO100</url>
-        <faculty>Institutt for informasjons- og medievitenskap</faculty>
-        <institution>Universitetet i Bergen</institution>
-        <credits>10</credits>
-        <terms>1</terms>
-        <term>Fall</term>
-        <language>Norsk</language>
-        <contact>studieveileder@info.uib.no</contact>
-        <grade>6</grade>
-    </course>
-    <course key="uib/INF207">
-        <code>INF207</code>
-        <title>Sosial nettverksteori</title>
-        <url>http://www.uib.no/emne/INF207</url>
-        <faculty>Institutt for informatikk</faculty>
-        <institution>Universitetet i Bergen</institution>
-        <credits>10</credits>
-        <terms>1</terms>
-        <term>Fall</term>
-        <language>Norsk</language>
-        <contact>studieveileder@ii.uib.no</contact>
-        <grade>6</grade>
-    </course>
-    <course key="uib/EXPHIL-SVEKS">
-        <code>EXPHIL-SVEKS</code>
-        <title>Examen philosophicum- skuleeksamen</title>
-        <url>http://www.uib.no/emne/EXPHIL-SVEKS</url>
-        <faculty>Institutt for filosofi og førstesemesterstudium</faculty>
-        <institution>Universitetet i Bergen</institution>
-        <credits>10</credits>
-        <terms>1</terms>
-        <term value="fall">Høst</term>
-        <term value="spring">Vår</term>
-        <language>Norsk</language>
-        <contact>exphil@uib.no</contact>
-        <grade>6</grade>
-    </course>
-    <course key="uib/INFO132">
-        <code>INFO132</code>
-        <title>Grunnkurs i programmering</title>
-        <url>http://www.uib.no/emne/INFO132</url>
-        <faculty>Institutt for informasjons- og medievitenskap</faculty>
-        <institution>Universitetet i Bergen</institution>
-        <credits>10</credits>
-        <terms>1</terms>
-        <term value="spring">Vår</term>
-        <language>Norsk</language>
-        <contact>studieveileder@info.uib.no</contact>
-        <grade>6</grade>
-    </course>
-    <course key="uib/INFO102">
-        <code>INFO102</code>
-        <title>Formelle metodar for informasjonsvitskap</title>
-        <url>http://www.uib.no/emne/INFO102</url>
-        <faculty>Institutt for informasjons- og medievitenskap</faculty>
-        <institution>Universitetet i Bergen</institution>
-        <credits>5</credits>
-        <terms>1</terms>
-        <term value="spring">Vår</term>
-        <language>Norsk</language>
-        <contact>studieveileder@info.uib.no</contact>
-        <grade>6</grade>
-    </course>
-    <course key="uib/INFO282">
-        <code>INFO282</code>
-        <title>Knowledge Representation and Reasoning </title>
-        <url>http://www.uib.no/emne/INFO282</url>
-        <faculty>Institutt for informasjons- og medievitenskap</faculty>
-        <institution>Universitetet i Bergen</institution>
-        <credits>10</credits>
-        <terms>1</terms>
-        <term value="fall">Høst</term>
-        <language>English</language>
-        <contact>advice@info.uib.no</contact>
-        <grade>6</grade>
-    </course>
+
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:aiiso="http://vocab.org/aiiso/schema#"
+xmlns:aiiso-roles="http://purl.org/vocab/aiiso-roles/schema#"
+xmlns:rating="http://purl.org/stuff/rev#"
+xmlns:rel="http://purl.org/dc/terms/relation#">
+
+    <aiiso:Programme rdf:about="http://www.uib.no/studieprogram/BASV-INFO">
+        <aiiso:code>BASV-INFO</aiiso:code>
+        <aiiso:name>Bachelorprogram i informasjonsvitskap</aiiso:name>
+        <aiiso:Faculty>Samfunnsvitenskapelig fakultet</aiiso:Faculty>
+        <aiiso:Institute>Institutt for informasjons- og medievitenskap</aiiso:Institute>
+        <aiiso:Institution>Universitetet i Bergen</aiiso:Institution>
+        <aiiso-roles:Student_Adviser>studierettleiar.svfa@uib.no</aiiso-roles:Student_Adviser>
+        <rating:rating>6</rating:rating>
+    </aiiso:Programme>
+
+    <aiiso:Subject rdf:about="http://www.uib.no/emne/INFO100">
+        <aiiso:code>INFO100</aiiso:code>
+        <aiiso:name>Examen facultatum - Grunnkurs i informasjonsvitskap</aiiso:name>
+        <aiiso-roles:Student_Adviser>studieveileder@info.uib.no</aiiso-roles:Student_Adviser>
+        <rel:isPartOf>http://www.uib.no/studieprogram/BASV-INFO</rel:isPartOf>
+    </aiiso:Subject>
+
+    <aiiso:Subject rdf:about="http://www.uib.no/emne/INFO132">
+        <aiiso:code>INFO132</aiiso:code>
+        <aiiso:name>Grunnkurs i programmering</aiiso:name>
+        <aiiso-roles:Student_Adviser>studieveileder@info.uib.no</aiiso-roles:Student_Adviser>
+        <rel:isPartOf>http://www.uib.no/studieprogram/BASV-INFO</rel:isPartOf>
+    </aiiso:Subject>
+
+    <aiiso:Subject rdf:about="http://www.uib.no/emne/INFO102">
+        <aiiso:code>INFO102</aiiso:code>
+        <aiiso:name>Formelle metodar for informasjonsvitskap</aiiso:name>
+        <aiiso-roles:Student_Adviser>studieveileder@info.uib.no</aiiso-roles:Student_Adviser>
+        <rel:isPartOf>http://www.uib.no/studieprogram/BASV-INFO</rel:isPartOf>
+    </aiiso:Subject>
+
+    <aiiso:Subject rdf:about="http://www.uib.no/emne/INFO282">
+        <aiiso:code>INFO282</aiiso:code>
+        <aiiso:name>Knowledge Representation and Reasoning </aiiso:name>
+        <aiiso-roles:Student_Adviser>advice@info.uib.no</aiiso-roles:Student_Adviser>
+        <rel:isPartOf>http://www.uib.no/studieprogram/BASV-INFO</rel:isPartOf>
+    </aiiso:Subject>
+
+    <aiiso:Programme rdf:about="http://www.uib.no/studieprogram/BAMN-HAV">
+        <aiiso:code>BAMN-HAV</aiiso:code>
+        <aiiso:name>Bachelorprogram i berekraftig havbruk</aiiso:name>
+        <aiiso:Faculty>Det matematisk- og naturvitenskapelige fakultet</aiiso:Faculty>
+        <aiiso:Institute>Institutt for biologi</aiiso:Institute>
+        <aiiso:Institution>Universitetet i Bergen</aiiso:Institution>
+        <aiiso-roles:Student_Adviser>studieveileder@ii.uib.no</aiiso-roles:Student_Adviser>
+        <rating:rating>6</rating:rating>
+    </aiiso:Programme>
+
+    <aiiso:Subject rdf:about="http://www.uib.no/emne/BIO100">
+        <aiiso:code>BIO100</aiiso:code>
+        <aiiso:name>Innføring i evolusjon og økologi</aiiso:name>
+        <aiiso-roles:Student_Adviser>Beate.Rensvik@bio.uib.no</aiiso-roles:Student_Adviser>
+        <rel:isPartOf>http://www.uib.no/studieprogram/BAMN-HAV</rel:isPartOf>
+    </aiiso:Subject>
+
+    <aiiso:Subject rdf:about="http://www.uib.no/emne/BIO291">
+        <aiiso:code>BIO291</aiiso:code>
+        <aiiso:name>Fiskebiologi II -Fysiologi</aiiso:name>
+        <aiiso-roles:Student_Adviser>studie@bio.uib.no</aiiso-roles:Student_Adviser>
+        <rel:isPartOf>http://www.uib.no/studieprogram/BAMN-HAV</rel:isPartOf>
+    </aiiso:Subject>
+
+    <aiiso:Subject rdf:about="http://www.uib.no/emne/BIO280">
+        <aiiso:code>BIO280</aiiso:code>
+        <aiiso:name>Fiskebiologi I -Systematikk og anatomi</aiiso:name>
+        <aiiso-roles:Student_Adviser>studie@bio.uib.no</aiiso-roles:Student_Adviser>
+        <rel:isPartOf>http://www.uib.no/studieprogram/BAMN-HAV</rel:isPartOf>
+    </aiiso:Subject>
+
+    <aiiso:Programme rdf:about="http://www.uib.no/studieprogram/BAHF-FILO">
+        <aiiso:code>BAHF-FILO</aiiso:code>
+        <aiiso:name>Bachelorprogram i filosofi</aiiso:name>
+        <aiiso:Faculty>Det humanistiske fakultet</aiiso:Faculty>
+        <aiiso:Institute>Institutt for filosofi og førstesemesterstudium</aiiso:Institute>
+        <aiiso:Institution>Universitetet i Bergen</aiiso:Institution>
+        <aiiso-roles:Student_Adviser>exphil@uib.no</aiiso-roles:Student_Adviser>
+        <rating:rating>6</rating:rating>
+    </aiiso:Programme>
+
+    <aiiso:Subject rdf:about="http://www.uib.no/emne/FIL124">
+        <aiiso:code>FIL124</aiiso:code>
+        <aiiso:name>Introduksjon til praktisk filosofi</aiiso:name>
+        <aiiso-roles:Student_Adviser>studierettleiar@fof.uib.no</aiiso-roles:Student_Adviser>
+        <rel:isPartOf>http://www.uib.no/studieprogram/BAHF-FILO</rel:isPartOf>
+    </aiiso:Subject>
+
+    <aiiso:Subject rdf:about="http://www.uib.no/emne/FIL218">
+        <aiiso:code>FIL218</aiiso:code>
+        <aiiso:name>Estetikk</aiiso:name>
+        <aiiso-roles:Student_Adviser>studierettleiar@fof.uib.no</aiiso-roles:Student_Adviser>
+        <rel:isPartOf>http://www.uib.no/studieprogram/BAHF-FILO</rel:isPartOf>
+    </aiiso:Subject>
+
+    <aiiso:Subject rdf:about="http://www.uib.no/emne/FIL238">
+        <aiiso:code>FIL238</aiiso:code>
+        <aiiso:name>Det moderne: klassiske tekstar</aiiso:name>
+        <aiiso-roles:Student_Adviser>studierettleiar@fof.uib.no</aiiso-roles:Student_Adviser>
+        <rel:isPartOf>http://www.uib.no/studieprogram/BAHF-FILO</rel:isPartOf>
+    </aiiso:Subject>
+
+    <aiiso:Programme rdf:about="http://www.uib.no/studieprogram/MAPS-PED">
+        <aiiso:code>MAPS-PED</aiiso:code>
+        <aiiso:name>Masterprogram i pedagogikk</aiiso:name>
+        <aiiso:Faculty>Det psykologiske fakultet</aiiso:Faculty>
+        <aiiso:Institute>Institutt for pedagogikk</aiiso:Institute>
+        <aiiso:Institution>Universitetet i Bergen</aiiso:Institution>
+        <aiiso-roles:Student_Adviser>studierettleiar.svfa@uib.no</aiiso-roles:Student_Adviser>
+        <rating:rating>6</rating:rating>
+    </aiiso:Programme>
+
+    <aiiso:Subject rdf:about="http://www.uib.no/emne/PED100PED311">
+        <aiiso:code>PED311</aiiso:code>
+        <aiiso:name>Pedagogisk filosofi</aiiso:name>
+        <aiiso-roles:Student_Adviser>studierettleiar.psyfa@uib.no</aiiso-roles:Student_Adviser>
+        <rel:isPartOf>http://www.uib.no/studieprogram/MAPS-PED</rel:isPartOf>
+    </aiiso:Subject>
+
+    <aiiso:Subject rdf:about="http://www.uib.no/emne/PED313">
+        <aiiso:code>PED313</aiiso:code>
+        <aiiso:name>Kunnskap og kunnskapsprosessar</aiiso:name>
+        <aiiso-roles:Student_Adviser>studierettleiar.psyfa@uib.no</aiiso-roles:Student_Adviser>
+        <rel:isPartOf>http://www.uib.no/studieprogram/MAPS-PED</rel:isPartOf>
+    </aiiso:Subject>
+
+    <aiiso:Subject rdf:about="http://www.uib.no/emne/PED312">
+        <aiiso:code>PED312</aiiso:code>
+        <aiiso:name>Forskingsmetode</aiiso:name>
+        <aiiso-roles:Student_Adviser>studierettleiar.psyfa@uib.no</aiiso-roles:Student_Adviser>
+        <rel:isPartOf>http://www.uib.no/studieprogram/MAPS-PED</rel:isPartOf>
+    </aiiso:Subject>
+
+    <aiiso:Programme rdf:about="http://www.uib.no/studieprogram/MAPS-PED">
+        <aiiso:code>MAMD-GENV</aiiso:code>
+        <aiiso:name>Master i helsefag</aiiso:name>
+        <aiiso:Faculty>Det Medisinsk-odontologiske fakultet</aiiso:Faculty>
+        <aiiso:Institute>Institutt for global helse og samfunnsmedisin</aiiso:Institute>
+        <aiiso:Institution>Universitetet i Bergen</aiiso:Institution>
+        <aiiso-roles:Student_Adviser>studie@igs.uib.no</aiiso-roles:Student_Adviser>
+        <rating:rating>6</rating:rating>
+    </aiiso:Programme>
+
+    <aiiso:Subject rdf:about="http://www.uib.no/emne/HEL100HEL310">
+        <aiiso:code>HEL310</aiiso:code>
+        <aiiso:name>Masterprogram i helsefag, felles studiedel: Vitskapsteori og sentrale helsevitskaplege tema</aiiso:name>
+        <aiiso-roles:Student_Adviser>studie@igs.uib.no</aiiso-roles:Student_Adviser>
+        <rel:isPartOf>http://www.uib.no/studieprogram/MAMD-GENV</rel:isPartOf>
+    </aiiso:Subject>
+
+    <aiiso:Subject rdf:about="http://www.uib.no/emne/HEL320A">
+        <aiiso:code>HEL320A</aiiso:code>
+        <aiiso:name>Masterprogram i helsefag, felles studiedel: Forskningsmetode og -etikk</aiiso:name>
+        <aiiso-roles:Student_Adviser>studie@igs.uib.no</aiiso-roles:Student_Adviser>
+        <rel:isPartOf>http://www.uib.no/studieprogram/MAMD-GENV</rel:isPartOf>
+    </aiiso:Subject>
+
+    <aiiso:Subject rdf:about="http://www.uib.no/emne/HELSTA">
+        <aiiso:code>HELSTA</aiiso:code>
+        <aiiso:name>Statistikk i helsefagleg forsking</aiiso:name>
+        <aiiso-roles:Student_Adviser>studie@igs.uib.no</aiiso-roles:Student_Adviser>
+        <rel:isPartOf>http://www.uib.no/studieprogram/MAMD-GENV</rel:isPartOf>
+    </aiiso:Subject>
+
+</rdf:RDF>
+
 </mittstudium>

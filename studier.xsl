@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                 xmlns:fo="http://www.w3.org/1999/XSL/Format"
+                xmlns:aiiso="http://vocab.org/aiiso/schema#"
+                xmlns:rating="http://purl.org/stuff/rev#"
                 version="1.0">
 
-    <xsl:template match="mittstudium">
+    <xsl:template match="rdf:RDF">
         <html>
             <head>
                 <style type="text/css">
@@ -20,29 +23,24 @@
                     <tr>
                         <th>Tittel</th>
                         <th color="green">Fagkode</th>
-                        <th>Studiepoeng</th>
+                        <th>Karakter</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <xsl:apply-templates select="course"/>
+                    <xsl:apply-templates select="aiiso:Programme"/>
                 </tbody>
             </table>
         </body>
         </html>
     </xsl:template>
 
-    <xsl:template match="course">
+    <xsl:template match="aiiso:Programme">
         <tr>
             <td>
-                <xsl:element name="a">
-                    <xsl:attribute name="href">
-                        <xsl:value-of select="url"/>
-                    </xsl:attribute>
-                    <xsl:value-of select="title"/>
-                </xsl:element>
+                <xsl:value-of select="aiiso:name"/>
             </td>
-            <td><xsl:value-of select="code"/></td>
-            <td><xsl:value-of select="credits"/></td>
+            <td><xsl:value-of select="aiiso:code"/></td>
+            <td><xsl:value-of select="rating:rating"/></td>
         </tr>
     </xsl:template>
 
